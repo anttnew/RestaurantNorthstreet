@@ -587,6 +587,23 @@ header .header-content .header-content-inner h1 {
 	box-shadow: none;
 }
 
+#contact .contact-buttons input, 
+#contact .contact-buttons input:focus {
+	color: #ffc266;
+	background-color: #182c39;
+	margin: 20px auto 40px auto;
+	border-radius: 50px;
+	font-weight: 600;
+	padding: 10px;
+	border: 1px solid #ffc266;
+}
+
+#contact .contact-buttons input:hover {
+	color: #182c39;
+	background-color: transparent;
+	border: 1px solid #182c39;
+}
+
 #contact .left-box {
 	background-color: #182c39;
 	margin: 0 20px;
