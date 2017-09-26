@@ -52,21 +52,15 @@ $("#more").click(function(){
 
 
 /* ***** Smooth Scrolling  ***** */
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
+$(document).ready(function(){ 
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
-   // this.hash has a value before overriding default behavior
   if (this.hash !== "") {
 
     // Prevent default anchor click behavior
     event.preventDefault();
-
-    // Store hash
     var hash = this.hash;
 
-   
-    // (900) specifies the number of milliseconds it takes to scroll to the specified area
     $('html, body').animate({
       scrollTop: $(hash).offset().top
     }, 900, function(){
@@ -74,16 +68,16 @@ $(document).ready(function(){
       // Add hash (#) to URL when done scrolling (default click behavior)
       window.location.hash = hash;
       });
-    } // End if
-  });
+  } // End if
+});
 
 
   /* ***** Scroll to Top ***** */ 
   $(window).scroll(function() {
       if ($(this).scrollTop() >= 300) {        
-          $('.to-top').fadeIn(200);    // Fade in the arrow
+          $('.to-top').fadeIn(200);    
       } else {
-          $('.to-top').fadeOut(200);   // Else fade out the arrow
+          $('.to-top').fadeOut(200);   
       }
   });
   $('.to-top').click(function() {      
@@ -92,10 +86,4 @@ $(document).ready(function(){
       }, 500);
   });
 
-
-
-
-
-
 })
-
